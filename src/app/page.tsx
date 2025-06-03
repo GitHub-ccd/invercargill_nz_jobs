@@ -243,7 +243,7 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [sectionRefs]);
 
   // Smooth scroll
   const handleNavClick = (e: React.MouseEvent, href: string) => {
@@ -293,9 +293,9 @@ export default function Home() {
               Welcome to Invercargill!
             </h1>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-              You've made a great choice moving here. As a hardworking person
-              looking to support your family, you'll find promising
-              opportunities. The city's job market is set for strong growth, and
+              You&apos;ve made a great choice moving here. As a hardworking person
+              looking to support your family, you&apos;ll find promising
+              opportunities. The city&apos;s job market is set for strong growth, and
               your dedication is exactly what local employers are looking for.
               This guide is designed to help you every step of the way.
             </p>
@@ -325,10 +325,10 @@ export default function Home() {
                 Where Are The Jobs?
               </h2>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Invercargill's economy is diverse. While farming is a
+                Invercargill&apos;s economy is diverse. While farming is a
                 cornerstone, sectors like construction, real estate, and
                 professional services have many businesses. This creates
-                opportunities in a wide range of roles. Let's explore the key
+                opportunities in a wide range of roles. Let&apos;s explore the key
                 areas of demand.
               </p>
             </div>
@@ -457,7 +457,7 @@ export default function Home() {
                 Your Job Search Toolkit
               </h2>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Here are the essential resources you'll need to find and apply
+                Here are the essential resources you&apos;ll need to find and apply
                 for jobs effectively in Invercargill.
               </p>
             </div>
